@@ -77,24 +77,19 @@ Change these in `/config`.
 In a Claude Code terminal session:
 
 ```
-/plugin install cachekeeper --marketplace the-cybersapien/claude-cache
+/plugin install cachekeeper --marketplace ultranity/claude-cache
 ```
 
 Answer `y` to add the marketplace, then pick a scope. From a shell:
 
 ```
-claude plugin marketplace add the-cybersapien/claude-cache
-claude plugin install cachekeeper@claude-cache
+claude plugin marketplace add ultranity/claude-cache
+claude plugin install cachekeeper@ultranity-cachekeeper
 ```
 
 In the desktop app, plugins run in the Code tab. Start a new Code session after you install.
 
-Until version 0.3.0 the plugin was called claude-cache. If you installed it under that name, swap it for the new one:
-
-```
-claude plugin uninstall claude-cache@claude-cache
-claude plugin install cachekeeper@claude-cache
-```
+This fork fixes a background subagent marking the idle main session busy. If you already have an upstream copy, disable `claude-cache@claude-cache` or `cachekeeper@claude-cache` before starting a session with this fork.
 
 ## What cachekeeper reads and runs
 

@@ -1,5 +1,5 @@
 {
-  "name": "claude-cache",
+  "name": "ultranity-cachekeeper",
   "description": "cachekeeper: compact idle Claude Code sessions while the prompt cache is warm.",
   "owner": {
     "name": "Aditya Aggarwal",
